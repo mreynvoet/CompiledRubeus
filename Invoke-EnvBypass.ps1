@@ -1,25 +1,5 @@
 function Invoke-EnvBypass {
 <#
-.SYNOPSIS
-
-Bypasses UAC (even with Always Notify level set) by performing an registry modification of the "windir" value in "Environment" based on James Forshaw findings (https://tyranidslair.blogspot.cz/2017/05/exploiting-environment-variables-in.html)
-
-Only tested on Windows 10
-
-Author: Petr Medonos (@PetrMedonos)
-License: BSD 3-Clause
-Required Dependencies: None
-Optional Dependencies: None
-
-.PARAMETER Command
-
- Specifies the base64 encoded command you want to run in a high-integrity context.
-
-.EXAMPLE
-
-Invoke-EnvBypass -Command "IgBJAHMAIABFAGwAZQB2AGEAdABlAGQAOgAgACQAKAAoAFsAUwBlAGMAdQByAGkAdAB5AC4AUAByAGkAbgBjAGkAcABhAGwALgBXAGkAbgBkAG8AdwBzAFAAcgBpAG4AYwBpAHAAYQBsAF0AWwBTAGUAYwB1AHIAaQB0AHkALgBQAHIAaQBuAGMAaQBwAGEAbAAuAFcAaQBuAGQAbwB3AHMASQBkAGUAbgB0AGkAdAB5AF0AOgA6AEcAZQB0AEMAdQByAHIAZQBuAHQAKAApACkALgBJAHMASQBuAFIAbwBsAGUAKABbAFMAZQBjAHUAcgBpAHQAeQAuAFAAcgBpAG4AYwBpAHAAYQBsAC4AVwBpAG4AZABvAHcAcwBCAHUAaQBsAHQASQBuAFIAbwBsAGUAXQAnAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAJwApACkAIAAtACAAJAAoAEcAZQB0AC0ARABhAHQAZQApACIAIAB8ACAATwB1AHQALQBGAGkAbABlACAAQwA6AFwAVQBBAEMAQgB5AHAAYQBzAHMAVABlAHMAdAAuAHQAeAB0ACAALQBBAHAAcABlAG4AZAA="
-
-This will write out "Is Elevated: True" to C:\UACBypassTest.
 
 #>
 
